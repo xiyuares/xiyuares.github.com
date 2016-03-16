@@ -1,7 +1,7 @@
 function rnd(m,n){
 	return Math.floor(n+Math.random()*(m-n));
 }
-window.onload=function(){
+document.addEventListener('DOMContentLoaded',function(){
 	var oBox=document.querySelector('.box');
 	var R=4;
 	var C=7;
@@ -49,11 +49,11 @@ window.onload=function(){
 			for(var i=0;i<aDiv.length;i++){
 				aDiv[i].style.transition='none';
 				aDiv[i].style.transform='rotateY(0deg)';
-				aS1[i].style.backgroundImage='url(../img/'+(iNow%3+1)+'.jpg)';
-				aS2[i].style.backgroundImage='url(../img/'+((iNow+1)%3+1)+'.jpg)';
+				aS1[i].style.backgroundImage='url(img/'+(iNow%3+1)+'.jpg)';
+				aS2[i].style.backgroundImage='url(img/'+((iNow+1)%3+1)+'.jpg)';
 			}
 			bOk=false;
 			clearTimeout(timer);
 		},false)
 	};
-};
+},false)
