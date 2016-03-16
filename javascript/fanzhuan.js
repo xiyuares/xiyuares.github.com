@@ -49,8 +49,8 @@ window.onload=function(){
 			for(var i=0;i<aDiv.length;i++){
 				aDiv[i].style.transition='none';
 				aDiv[i].style.transform='rotateY(0deg)';
-				aS1[i].style.backgroundImage='url(img/'+(iNow%3+1)+'.jpg)';
-				aS2[i].style.backgroundImage='url(img/'+((iNow+1)%3+1)+'.jpg)';
+				aS1[i].style.backgroundImage='url(../img/'+(iNow%3+1)+'.jpg)';
+				aS2[i].style.backgroundImage='url(../img/'+((iNow+1)%3+1)+'.jpg)';
 			}
 			bOk=false;
 			clearTimeout(timer);
