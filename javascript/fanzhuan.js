@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded',function(){
 	oBox.onclick=function(){
 		var aS1=[];
 		var aS2=[];
-		clearTimeout(timer);
 		if(bOk)return;
+		clearTimeout(timer);
 		bOk=true;
 		iNow++;
 		var aDiv=oBox.getElementsByTagName('div');
