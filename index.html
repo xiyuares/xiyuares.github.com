@@ -2,13 +2,1376 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>翻转</title>
-<link rel="stylesheet" href="css/common.css">
-<script src="javascript/fanzhuan.js"></script>
+<title>京东</title>
+<link rel="stylesheet" href="CSS/common.css">
+<link rel="stylesheet" href="CSS/index.css">
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+window.onload=function(){
+	var oBanner=document.getElementById('banner_ad');
+	var oPic1=oBanner.getElementsByTagName('a')[0];
+	var aBtn1=oBanner.getElementsByTagName('span');
+	
+
+	aBtn1[0].onclick=function(){
+			for(var i=0; i<aBtn1.length; i++){
+				aBtn1[i].className='fl';
+			}
+		oPic1.className='a0';
+		this.className='active';
+	}
+	aBtn1[1].onclick=function(){
+			for(var i=0; i<aBtn1.length; i++){
+				aBtn1[i].className='fl';
+			}
+		oPic1.className='a1';
+		this.className='active';
+	}
+	aBtn1[2].onclick=function(){
+			for(var i=0; i<aBtn1.length; i++){
+				aBtn1[i].className='fl';
+			}
+		oPic1.className='a2';
+		this.className='active';
+	}
+	aBtn1[3].onclick=function(){
+			for(var i=0; i<aBtn1.length; i++){
+				aBtn1[i].className='fl';
+			}
+		oPic1.className='a3';
+		this.className='active';
+	}
+	aBtn1[4].onclick=function(){
+			for(var i=0; i<aBtn1.length; i++){
+				aBtn1[i].className='fl';
+			}
+		oPic1.className='a4';
+		this.className='active';
+	}
+	aBtn1[5].onclick=function(){
+			for(var i=0; i<aBtn1.length; i++){
+				aBtn1[i].className='fl';
+			}
+		oPic1.className='a5';
+		this.className='active';
+	}
+	<!--banner_ad-->
+	var oPic2=document.getElementById('left_b_son');
+	var oLeft2=document.getElementById('btn_l');
+	var oRight2=document.getElementById('btn_r');
+	oLeft2.onclick=function(){
+		oPic2.style.marginLeft='-671px';
+	}
+	oRight2.onclick=function(){
+		oPic2.style.marginLeft='1px';
+	}
+}
+</script>
 </head>
 
 <body>
-<div class="box">
+<div class="box0">
+<div class="header wrapper clearFix">
+	<div class="header_l fl">
+    	<a href="#">
+        	<img src="images/star.png" alt="" />
+            收藏京东
+        </a>
+    </div>
+	<div class="header_l fl">
+    	<a href="#">
+        	<img src="images/header.png" alt="" />
+            关注京东
+        </a>
+    </div>
+	<div class="header_l fl">
+    	<a href="#">
+        	<img src="images/header2.png" alt="" />
+            <b>北京</b>[更换]
+        </a>
+    </div>
+    <div class="header_r fr clearFix">
+    	<div class="fl">你好，请<a href="#">登录</a><a href="#"> 免费注册</a></div>
+    	<div class="fl"><a href="#">我的订单</a></div>
+    	<div class="fl"><a href="#"><span>VIP</span>会员俱乐部</a></div>
+    	<div class="fl"><a href="#"><span>BJD</span>企业频道</a></div>
+    	<div class="function fl">
+        	<a href="#"><img class="phone1" src="images/header3.png" alt="" /><img class="phone2" src="images/phone_active.png" alt="" />手机京东</a><img class="arrow1" src="images/arrow.png" alt="" /><img class="arrow2" src="images/arrow2.png" alt="" /></img>
+        	<div class="function_son">
+            	<a href="#">
+                	<img src="images/function_son.png" alt="" />
+                </a>
+            </div>
+        </div>
+    	<div class="function fl"><a href="#">客户服务</a><img class="arrow1" src="images/arrow.png" alt="" /><img class="arrow2" src="images/arrow2.png" alt="" /></img></div>
+    	<div class="function fl"><a href="#">网站导航</a><img class="arrow1" src="images/arrow.png" alt="" /><img class="arrow2" src="images/arrow2.png" alt="" /></img></div>
+    </div>
+</div>
+</div>
+<!--header-->
+<div class="search wrapper clearFix">
+	<h1 class="fl">
+    	<a href="#">
+            京东
+        </a>
+    </h1>
+    <a href="#" class="dog fl">
+    	<img src="images/JDdog.jpg" alt="" />
+    </a>
+    <div class="div1 fl">
+    	<form action="#" method="get">
+        	<input type="text" class="fl" />
+            <input type="button" class="btn fl" value="搜索" />
+        </form>
+        <div class="div2">
+        	<span>热门搜索：</span>
+            <a href="#" class="red">上新满减</a>
+            <a href="#">潮流换新</a>
+            <a href="#">4K电视</a>
+            <a href="#">母婴节</a>
+            <a href="#">美翻了</a>
+            <a href="#">手机特惠</a>
+            <a href="#">程序猿</a>
+            <a href="#">领100</a>
+        </div>
+    </div>
+    <a href="#" class="mine fl">我的京东<span class="arrow_bottom fr"></span></a>
+    <a href="#" class="shoppinglist fl">去购物车结算<span class="arrow_right fr"></span><img src="images/shoppinglist2.png" class="shoppinglist2" alt="" /></a>
+    <a href="#" class="erweima fr"></a>
+</div>
+<!--search-->
+<div class="banner wrapper clearFix">
+	<div class="sidebar fl">
+    	<h3>全部商品分类</h3>
+        <div class="list list1">图书、音像、数字商品</div>
+        <div class="list">家用电器</div>
+        <div class="list">手机、数码、京东通信</div>
+        <div class="list">电脑、办公</div>
+        <div class="list">家居、家具、家装、厨具</div>
+        <div class="list">男装、女装、内衣、珠宝</div>
+        <div class="list">个性化妆</div>
+        <div class="list">鞋靴、箱包、钟表、奢侈品</div>
+        <div class="list">运动户外</div>
+        <div class="list">整车、汽车用品</div>
+        <div class="list">母婴、玩具乐器</div>
+        <div class="list">食品饮料、酒类、生鲜</div>
+        <div class="list">营养保健</div>
+        <div class="list">彩票、旅行、充值、票务</div>
+    </div>
+    <div class="banner_r fl">
+    	<div class="nav clearFix">
+        	<a href="#" class="a1 fl">首页</a>
+        	<a href="#" class="a1 fl">服装城</a>
+        	<a href="#" class="a1 fl">食品</a>
+        	<a href="#" class="a1 fl">团购</a>
+        	<a href="#" class="a1 fl">夺宝岛</a>
+        	<a href="#" class="a1 fl">闪购</a>
+        	<a href="#" class="a1 fl">金融</a>
+            <a href="#" class="pic fr"><img src="images/nav_pic.png" alt="" /></a>
+        </div>
+        <div class="banner_r_b clearFix">
+        	<div class="left fl">
+            	<div class="banner_ad" id="banner_ad">
+                	<a href="#" class="show">
+                    	<img src="images/banner_ad.jpg" alt="" />
+                    </a>
+                    <a href="#">
+                    	<img src="images/banner_ad2.jpg" alt="" />
+                    </a>
+                    <a href="#">
+                    	<img src="images/banner_ad.jpg" alt="" />
+                    </a>
+                    <a href="#">
+                    	<img src="images/banner_ad2.jpg" alt="" />
+                    </a>
+                    <a href="#">
+                    	<img src="images/banner_ad.jpg" alt="" />
+                    </a>
+                    <a href="#">
+                    	<img src="images/banner_ad2.jpg" alt="" />
+                    </a>
+                    <div class="btn clearFix">
+                    	<span class="fl active">1</span>
+                    	<span class="fl">2</span>
+                    	<span class="fl">3</span>
+                    	<span class="fl">4</span>
+                    	<span class="fl">5</span>
+                    	<span class="fl">6</span>
+                    </div>
+                </div>
+                <!--banner_ad-->
+                <div class="left_b">
+                	<div class="left_b_son clearFix" id="left_b_son">
+                    	<a href="#" class="fl">
+                        	<img src="images/1.jpg" alt="" />
+                        </a>
+                    	<a href="#" class="fl">
+                        	<img src="images/2.jpg" alt="" />
+                        </a>
+                    	<a href="#" class="fl">
+                        	<img src="images/3.jpg" alt="" />
+                        </a>
+                    	<a href="#" class="fl">
+                        	<img src="images/1.jpg" alt="" />
+                        </a>
+                    	<a href="#" class="fl">
+                        	<img src="images/3.jpg" alt="" />
+                        </a>
+                    	<a href="#" class="fl">
+                        	<img src="images/2.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="btn" id="btn_l"></div>
+                    <div class="btn" id="btn_r"></div>
+                </div>
+            </div>
+            <div class="right fl">
+            	<a href="#" class="right_ad">
+                	<img src="images/banner_r.jpg" alt="" />
+                </a>
+                <h3 class="clearFix">
+                	京东快报
+                    <a href="#" class="more fr">更多快报></a>
+                </h3>
+                <div class="div1 clearFix">
+                	<ul class="fl">
+                    	<li><a href="#">腕表劲爆秒杀 限量抢</a></li>
+                    	<li><a href="#">腕表劲爆秒杀 限量抢</a></li>
+                    	<li><a href="#">腕表劲爆秒杀 限量抢</a></li>
+                    	<li><a href="#">腕表劲爆秒杀 限量抢</a></li>
+                    </ul>
+                	<ul class="fl">
+                    	<li><a href="#">腕表劲爆秒杀 限量抢</a></li>
+                    	<li><a href="#">腕表劲爆秒杀 限量抢</a></li>
+                    	<li><a href="#">腕表劲爆秒杀 限量抢</a></li>
+                    	<li><a href="#">腕表劲爆秒杀 限量抢</a></li>
+                    </ul>
+                </div>
+                <div class="bian clearFix">
+                	<a class="a1 fl" href="#">
+                    	<img src="images/bianmin.png" alt="" />
+                        <p>话费</p>
+                    </a>
+                    <a class="a1 fl" href="#">
+                    	<img src="images/bianmin.png" alt="" />
+                        <p>话费</p>
+                    </a>
+                    <a class="a1 fl" href="#">
+                    	<img src="images/bianmin.png" alt="" />
+                        <p>话费</p>
+                    </a>
+                    <a class="a1 fl" href="#">
+                    	<img src="images/bianmin.png" alt="" />
+                        <p>话费</p>
+                    </a>
+                    <a class="a1 fl" href="#">
+                    	<img src="images/bianmin.png" alt="" />
+                        <p>话费</p>
+                    </a>
+                    <a class="a1 fl" href="#">
+                    	<img src="images/bianmin.png" alt="" />
+                        <p>话费</p>
+                    </a>
+                    <a class="a1 fl" href="#">
+                    	<img src="images/bianmin.png" alt="" />
+                        <p>话费</p>
+                    </a>
+                    <a class="a1 fl" href="#">
+                    	<img src="images/bianmin.png" alt="" />
+                        <p>话费</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner-->
+<div class="life wrapper">
+	<h3><a href="#">生活的橱窗</a> <i>每一天展示精彩！</i></h3>
+    <div class="list clearFix">
+    	<div class="div1 fl">
+        	<a href="#" class="pic">
+        		<img src="images/life.jpg" alt="" />
+            </a>
+            <div class="bg">
+            	<h3><a href="#">天天低价</a></h3>
+                <p>ThinkPad超级</p>
+                <p class="p1">满4000减200</p>
+            </div>
+        </div>
+    	<div class="div1 fl">
+        	<a href="#" class="pic">
+        		<img src="images/life.jpg" alt="" />
+            </a>
+            <div class="bg">
+            	<h3><a href="#">天天低价</a></h3>
+                <p>ThinkPad超级</p>
+                <p class="p1">满4000减200</p>
+            </div>
+        </div>
+    	<div class="div1 fl">
+        	<a href="#" class="pic">
+        		<img src="images/life.jpg" alt="" />
+            </a>
+            <div class="bg">
+            	<h3><a href="#">天天低价</a></h3>
+                <p>ThinkPad超级</p>
+                <p class="p1">满4000减200</p>
+            </div>
+        </div>
+    	<div class="div1 fl">
+        	<a href="#" class="pic">
+        		<img src="images/life.jpg" alt="" />
+            </a>
+            <div class="bg">
+            	<h3><a href="#">天天低价</a></h3>
+                <p>ThinkPad超级</p>
+                <p class="p1">满4000减200</p>
+            </div>
+        </div>
+    	<div class="div1 fl">
+        	<a href="#" class="pic">
+        		<img src="images/life.jpg" alt="" />
+            </a>
+            <div class="bg">
+            	<h3><a href="#">天天低价</a></h3>
+                <p>ThinkPad超级</p>
+                <p class="p1">满4000减200</p>
+            </div>
+        </div>
+    	<div class="div1 fl">
+        	<a href="#" class="pic">
+        		<img src="images/life.jpg" alt="" />
+            </a>
+            <div class="bg">
+            	<h3><a href="#">天天低价</a></h3>
+                <p>ThinkPad超级</p>
+                <p class="p1">满4000减200</p>
+            </div>
+        </div>
+    	<div class="div1 fl">
+        	<a href="#" class="pic">
+        		<img src="images/life.jpg" alt="" />
+            </a>
+            <div class="bg">
+            	<h3><a href="#">天天低价</a></h3>
+                <p>ThinkPad超级</p>
+                <p class="p1">满4000减200</p>
+            </div>
+        </div>
+    	<div class="div1 fl">
+        	<a href="#" class="pic">
+        		<img src="images/life.jpg" alt="" />
+            </a>
+            <div class="bg">
+            	<h3><a href="#">天天低价</a></h3>
+                <p>ThinkPad超级</p>
+                <p class="p1">满4000减200</p>
+            </div>
+        </div>
+        <div class="div2 fl">
+        	<a href="#">
+            	<img src="images/life2.jpg" alt="" />
+            </a>
+        </div>
+        <div class="div2 fl">
+        	<a href="#">
+            	<img src="images/life2.jpg" alt="" />
+            </a>
+        </div>
+        <div class="div2 fl">
+        	<a href="#">
+            	<img src="images/life2.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+</div>
+<!--life-->
+<div class="f1 wrapper clearFix">
+	<div class="f1_l fl">
+    	<h3><a href="#">家电通讯</a></h3>
+    	<div class="f1_l_b clearFix">
+        	<ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <a href="#" class="ad">
+            	<img src="images/f1_left.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+    <div class="f1_r fl">
+    	<div class="title clearFix">
+        	<a href="#" class="name fl">特价商品<span></span></a>
+        	<a href="#" class="name fl">大家电<span></span></a>
+        	<a href="#" class="name fl">小家电<span></span></a>
+        	<a href="#" class="name fl">手机通讯<span></span></a>
+        	<a href="#" class="name fl">汽车五金<span></span></a>
+            <a href="#" class="name2 fr">合约计划说明 ></a>
+            <a href="#" class="name2 fr">大家电配送 ></a>
+        </div>
+        <div class="f1_r_b clearFix">
+        	<div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="ad fl clearFix">
+            	<a href="#" class="show">
+                	<img src="images/f1_ad.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad2.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad3.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad4.jpg" alt="" />
+                </a>
+                <div class="btn1 clearFix">
+                	<div class="fl active"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                </div>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--floor 1-->
+<div class="f1 wrapper clearFix">
+	<div class="f1_l fl">
+    	<h3><a href="#">家电通讯</a></h3>
+    	<div class="f1_l_b clearFix">
+        	<ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <a href="#" class="ad">
+            	<img src="images/f1_left.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+    <div class="f1_r fl">
+    	<div class="title clearFix">
+        	<a href="#" class="name fl">特价商品<span></span></a>
+        	<a href="#" class="name fl">大家电<span></span></a>
+        	<a href="#" class="name fl">小家电<span></span></a>
+        	<a href="#" class="name fl">手机通讯<span></span></a>
+        	<a href="#" class="name fl">汽车五金<span></span></a>
+            <a href="#" class="name2 fr">合约计划说明 ></a>
+            <a href="#" class="name2 fr">大家电配送 ></a>
+        </div>
+        <div class="f1_r_b clearFix">
+        	<div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="ad fl clearFix">
+            	<a href="#" class="show">
+                	<img src="images/f1_ad.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad2.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad3.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad4.jpg" alt="" />
+                </a>
+                <div class="btn1 clearFix">
+                	<div class="fl active"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                </div>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="f1 wrapper clearFix">
+	<div class="f1_l fl">
+    	<h3><a href="#">家电通讯</a></h3>
+    	<div class="f1_l_b f3_position clearFix">
+        	<ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <a href="#" class="f3_ad">
+            	<img src="images/basketball.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+    <div class="f1_r fl">
+    	<div class="title clearFix">
+        	<a href="#" class="name fl">特价商品<span></span></a>
+        	<a href="#" class="name fl">大家电<span></span></a>
+        	<a href="#" class="name fl">小家电<span></span></a>
+        	<a href="#" class="name fl">手机通讯<span></span></a>
+        	<a href="#" class="name fl">汽车五金<span></span></a>
+            <a href="#" class="name2 fr">合约计划说明 ></a>
+            <a href="#" class="name2 fr">大家电配送 ></a>
+        </div>
+        <div class="f1_r_b clearFix">
+        	<a class="f3_pic fl">
+            	<img src="images/f3_1.jpg" alt="" />
+            </a>
+            <a class="f3_pic fl">
+            	<img src="images/f3_2.jpg" alt="" />
+            </a>
+            <div class="f3_float fl clearFix">
+            <a class="f3_pic fl">
+            	<img src="images/f3_3.jpg" alt="" />
+            </a>
+            <a class="f3_pic fl">
+            	<img src="images/f3_4.jpg" alt="" />
+            </a>
+            </div>
+            <a class="f3_pic fl">
+            	<img src="images/f3_5.jpg" alt="" />
+            </a>
+            <div class="f3_float fl">
+            <a class="f3_pic fl">
+            	<img src="images/f3_6.jpg" alt="" />
+            </a>
+            <a class="f3_pic fl">
+            	<img src="images/f3_7.jpg" alt="" />
+            </a>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--floor 3-->
+<div class="f1 wrapper clearFix">
+	<div class="f1_l fl">
+    	<h3><a href="#">家电通讯</a></h3>
+    	<div class="f1_l_b clearFix">
+        	<ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <a href="#" class="ad">
+            	<img src="images/f1_left.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+    <div class="f1_r fl">
+    	<div class="title clearFix">
+        	<a href="#" class="name fl">特价商品<span></span></a>
+        	<a href="#" class="name fl">大家电<span></span></a>
+        	<a href="#" class="name fl">小家电<span></span></a>
+        	<a href="#" class="name fl">手机通讯<span></span></a>
+        	<a href="#" class="name fl">汽车五金<span></span></a>
+            <a href="#" class="name2 fr">合约计划说明 ></a>
+            <a href="#" class="name2 fr">大家电配送 ></a>
+        </div>
+        <div class="f1_r_b clearFix">
+        	<div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="ad fl clearFix">
+            	<a href="#" class="show">
+                	<img src="images/f1_ad.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad2.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad3.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad4.jpg" alt="" />
+                </a>
+                <div class="btn1 clearFix">
+                	<div class="fl active"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                </div>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="f1 wrapper clearFix">
+	<div class="f1_l fl">
+    	<h3><a href="#">家电通讯</a></h3>
+    	<div class="f1_l_b clearFix">
+        	<ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <a href="#" class="ad">
+            	<img src="images/f1_left.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+    <div class="f1_r fl">
+    	<div class="title clearFix">
+        	<a href="#" class="name fl">特价商品<span></span></a>
+        	<a href="#" class="name fl">大家电<span></span></a>
+        	<a href="#" class="name fl">小家电<span></span></a>
+        	<a href="#" class="name fl">手机通讯<span></span></a>
+        	<a href="#" class="name fl">汽车五金<span></span></a>
+            <a href="#" class="name2 fr">合约计划说明 ></a>
+            <a href="#" class="name2 fr">大家电配送 ></a>
+        </div>
+        <div class="f1_r_b clearFix">
+        	<div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="ad fl clearFix">
+            	<a href="#" class="show">
+                	<img src="images/f1_ad.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad2.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad3.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad4.jpg" alt="" />
+                </a>
+                <div class="btn1 clearFix">
+                	<div class="fl active"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                </div>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="f1 f6 wrapper clearFix">
+	<div class="f1_l f6_l fl">
+    	<h3><a href="#">母婴玩具</a></h3>
+    	<div class="f1_l_b f6_l_b clearFix">
+        	<ul class="fl">
+            	<li><a href="#">奶粉</a></li>
+            	<li><a href="#">喂养用品</a></li>
+            	<li><a href="#">洗护用品</a></li>
+            	<li><a href="#">妈妈专区</a></li>
+            	<li><a href="#">童车童床</a></li>
+            </ul>
+            <ul class="fl">
+            	<li><a href="#">奶粉</a></li>
+            	<li><a href="#">喂养用品</a></li>
+            	<li><a href="#">洗护用品</a></li>
+            	<li><a href="#">妈妈专区</a></li>
+            	<li><a href="#">童车童床</a></li>
+            </ul>
+            <a href="#" class="f6_ad">
+            	<img src="images/f6_l.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+    <div class="f1_r fl">
+    	<div class="title clearFix">
+        	<a href="#" class="name fl">特价商品<span></span></a>
+        	<a href="#" class="name fl">大家电<span></span></a>
+        	<a href="#" class="name fl">小家电<span></span></a>
+        	<a href="#" class="name fl">手机通讯<span></span></a>
+        	<a href="#" class="name fl">汽车五金<span></span></a>
+            <a href="#" class="name2 fr">合约计划说明 ></a>
+            <a href="#" class="name2 fr">大家电配送 ></a>
+        </div>
+        <div class="f1_r_b clearFix">
+        	<div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="ad fl clearFix">
+            	<a href="#" class="show">
+                	<img src="images/f1_ad.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad2.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad3.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad4.jpg" alt="" />
+                </a>
+                <div class="btn1 clearFix">
+                	<div class="fl active"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                </div>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="div1 div_f6 fl">
+            	<a href="#" class="fl">
+                	<img src="images/f6.jpg" alt="" />
+                </a>
+                <div class="text fl">
+                <a href="#">宝宝狂欢购</a>
+                <p class="red fl">大牌爆款秒杀</p>
+                </div>
+            </div>
+            <div class="div1 div_f6 fl">
+            	<a href="#" class="fl">
+                	<img src="images/f6.jpg" alt="" />
+                </a>
+                <div class="text fl">
+                <a href="#">宝宝狂欢购</a>
+                <p class="red fl">大牌爆款秒杀</p>
+                </div>
+            </div>
+            <div class="div1 div_f6 fl">
+            	<a href="#" class="fl">
+                	<img src="images/f6.jpg" alt="" />
+                </a>
+                <div class="text fl">
+                <a href="#">宝宝狂欢购</a>
+                <p class="red fl">大牌爆款秒杀</p>
+                </div>
+            </div>
+            <ul class="ul_f6 fl">
+            	<li>文字文字文字文字</li>
+            	<li>文字文字文字文字</li>
+            	<li>文字文字文字文字</li>
+            	<li>文字文字文字文字</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="f1 f6 wrapper clearFix">
+	<div class="f1_l f6_l fl">
+    	<h3><a href="#">母婴玩具</a></h3>
+    	<div class="f1_l_b f6_l_b clearFix">
+        	<ul class="fl">
+            	<li><a href="#">奶粉</a></li>
+            	<li><a href="#">喂养用品</a></li>
+            	<li><a href="#">洗护用品</a></li>
+            	<li><a href="#">妈妈专区</a></li>
+            	<li><a href="#">童车童床</a></li>
+            </ul>
+            <ul class="fl">
+            	<li><a href="#">奶粉</a></li>
+            	<li><a href="#">喂养用品</a></li>
+            	<li><a href="#">洗护用品</a></li>
+            	<li><a href="#">妈妈专区</a></li>
+            	<li><a href="#">童车童床</a></li>
+            </ul>
+            <a href="#" class="f6_ad">
+            	<img src="images/f6_l.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+    <div class="f1_r fl">
+    	<div class="title clearFix">
+        	<a href="#" class="name fl">特价商品<span></span></a>
+        	<a href="#" class="name fl">大家电<span></span></a>
+        	<a href="#" class="name fl">小家电<span></span></a>
+        	<a href="#" class="name fl">手机通讯<span></span></a>
+        	<a href="#" class="name fl">汽车五金<span></span></a>
+            <a href="#" class="name2 fr">合约计划说明 ></a>
+            <a href="#" class="name2 fr">大家电配送 ></a>
+        </div>
+        <div class="f1_r_b clearFix">
+        	<div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="ad fl clearFix">
+            	<a href="#" class="show">
+                	<img src="images/f1_ad.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad2.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad3.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad4.jpg" alt="" />
+                </a>
+                <div class="btn1 clearFix">
+                	<div class="fl active"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                </div>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div2 fl">
+            	<a href="#">
+                	<img src="images/div2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="div1 div_f6 fl">
+            	<a href="#" class="fl">
+                	<img src="images/f6.jpg" alt="" />
+                </a>
+                <div class="text fl">
+                <a href="#">宝宝狂欢购</a>
+                <p class="red fl">大牌爆款秒杀</p>
+                </div>
+            </div>
+            <div class="div1 div_f6 fl">
+            	<a href="#" class="fl">
+                	<img src="images/f6.jpg" alt="" />
+                </a>
+                <div class="text fl">
+                <a href="#">宝宝狂欢购</a>
+                <p class="red fl">大牌爆款秒杀</p>
+                </div>
+            </div>
+            <div class="div1 div_f6 fl">
+            	<a href="#" class="fl">
+                	<img src="images/f6.jpg" alt="" />
+                </a>
+                <div class="text fl">
+                <a href="#">宝宝狂欢购</a>
+                <p class="red fl">大牌爆款秒杀</p>
+                </div>
+            </div>
+            <ul class="ul_f6 fl">
+            	<li>文字文字文字文字</li>
+            	<li>文字文字文字文字</li>
+            	<li>文字文字文字文字</li>
+            	<li>文字文字文字文字</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--f6,f7-->
+<div class="f1 wrapper clearFix">
+	<div class="f1_l fl">
+    	<h3><a href="#">家电通讯</a></h3>
+    	<div class="f1_l_b clearFix">
+        	<ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <ul class="fl">
+            	<li><a href="#">手机</a></li>
+            	<li><a href="#">手机配件</a></li>
+            	<li><a href="#">话费补贴</a></li>
+            	<li><a href="#">生活电器</a></li>
+            	<li><a href="#">厨房电器</a></li>
+            	<li><a href="#">个护健康</a></li>
+            	<li><a href="#">五金家装</a></li>
+            	<li><a href="#">冰柜/冰吧</a></li>
+            </ul>
+            <a href="#" class="ad">
+            	<img src="images/f1_left.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+    <div class="f1_r fl">
+    	<div class="title clearFix">
+        	<a href="#" class="name fl">特价商品<span></span></a>
+        	<a href="#" class="name fl">大家电<span></span></a>
+        	<a href="#" class="name fl">小家电<span></span></a>
+        	<a href="#" class="name fl">手机通讯<span></span></a>
+        	<a href="#" class="name fl">汽车五金<span></span></a>
+            <a href="#" class="name2 fr">合约计划说明 ></a>
+            <a href="#" class="name2 fr">大家电配送 ></a>
+        </div>
+        <div class="f1_r_b clearFix">
+        	<div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="ad fl clearFix">
+            	<a href="#" class="show">
+                	<img src="images/f1_ad.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad2.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad3.jpg" alt="" />
+                </a>
+            	<a href="#">
+                	<img src="images/f1_ad4.jpg" alt="" />
+                </a>
+                <div class="btn1 clearFix">
+                	<div class="fl active"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                	<div class="fl"></div>
+                </div>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="f8 fr clearFix">
+            	<ul class="ul1 fl">
+                	<li><a href="#">从0到1 开启商业</a></li>
+                	<li><a href="#">从0到1 开启商业</a></li>
+                	<li><a href="#">从0到1 开启商业</a></li>
+                	<li><a href="#">从0到1 开启商业</a></li>
+                	<li><a href="#">从0到1 开启商业</a></li>
+                	<li><a href="#">从0到1 开启商业</a></li>
+                	<li><a href="#">从0到1 开启商业</a></li>
+                	<li><a href="#">从0到1 开启商业</a></li>
+                	<li><a href="#">从0到1 开启商业</a></li>
+                	<li><a href="#">从0到1 开启商业</a></li>
+                </ul>
+                <ul class="ul2 fl">
+                	<li class="red">￥27.00</li>
+                	<li class="red">￥27.00</li>
+                	<li class="red">￥27.00</li>
+                	<li class="red">￥27.00</li>
+                	<li class="red">￥27.00</li>
+                	<li class="red">￥27.00</li>
+                	<li class="red">￥27.00</li>
+                	<li class="red">￥27.00</li>
+                	<li class="red">￥27.00</li>
+                	<li class="red">￥27.00</li>
+                </ul>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            <div class="div1 fl">
+            	<a href="#" class="pic">
+                	<img src="images/f1_r_b.jpg" alt="" />
+                </a>
+                <a href="#" class="text">买移动版送大礼包</a>
+                <p class="red">2999</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!--f8-->
+
+<div class="tips wrapper clearFix">
+	<ul class="fl">
+    	<li class="li1"><a href="#">购物指南</a></li>
+    	<li><a href="#">购物流程</a></li>
+    	<li><a href="#">会员介绍</a></li>
+    	<li><a href="#">团购/机票</a></li>
+    	<li><a href="#">常见问题</a></li>
+    	<li><a href="#">大家电</a></li>
+    	<li><a href="#">联系客服</a></li>
+    </ul>
+    <ul class="fl">
+    	<li class="li1"><a href="#">购物指南</a></li>
+    	<li><a href="#">购物流程</a></li>
+    	<li><a href="#">会员介绍</a></li>
+    	<li><a href="#">团购/机票</a></li>
+    	<li><a href="#">常见问题</a></li>
+    	<li><a href="#">大家电</a></li>
+    	<li><a href="#">联系客服</a></li>
+    </ul>
+    <ul class="fl">
+    	<li class="li1"><a href="#">购物指南</a></li>
+    	<li><a href="#">购物流程</a></li>
+    	<li><a href="#">会员介绍</a></li>
+    	<li><a href="#">团购/机票</a></li>
+    	<li><a href="#">常见问题</a></li>
+    	<li><a href="#">大家电</a></li>
+    	<li><a href="#">联系客服</a></li>
+    </ul>
+    <ul class="fl">
+    	<li class="li1"><a href="#">购物指南</a></li>
+    	<li><a href="#">购物流程</a></li>
+    	<li><a href="#">会员介绍</a></li>
+    	<li><a href="#">团购/机票</a></li>
+    	<li><a href="#">常见问题</a></li>
+    	<li><a href="#">大家电</a></li>
+    	<li><a href="#">联系客服</a></li>
+    </ul>
+    <ul class="fl">
+    	<li class="li1"><a href="#">购物指南</a></li>
+    	<li><a href="#">购物流程</a></li>
+    	<li><a href="#">会员介绍</a></li>
+    	<li><a href="#">团购/机票</a></li>
+    	<li><a href="#">常见问题</a></li>
+    	<li><a href="#">大家电</a></li>
+    	<li><a href="#">联系客服</a></li>
+    </ul>
+    <a href="#" class="tips2 fr">
+    	<img src="images/tips2.png" alt="" />
+    </a>
+</div>
+<div class="footer wrapper">
+	<div class="links">
+    	<a href="#"">关于我们</a>|<a href="#">联系我们</a>|<a href="#">商家入驻</a>|<a href="#">营销中心</a>|<a href#">手机京东</a>|<a href="#">友情链接</a>|<a href="#">销售联盟</a>|<a href="#">京东社区</a>|<a href="#">京东公益</a>|<a href="#">English Site</a>
+    </div>
+	<div class="copyright1">
+		<a href="#">北京市公安局朝阳分局备案编号110105014669</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">京ICP证070359号</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">新出发京零&nbsp;字第大120007号</a>
+    </div>
+    <div class="copyright2">
+    	<a href="#">音像制品经营许可证苏宿批005号</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">出版物经营许可证编号新出发(苏)批字第N-012号</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">互联网出版许可证编号新出网证(京)字150号</a>
+    </div>
+    <div class="copyright3">
+    	<a href="#">网络文化经营许可证京网文[2011]0168-061号</a>&nbsp;&nbsp;<a hrf="#">违法和不良信息举报电话：4006561155</a>&nbsp;&nbsp;Copyright&nbsp;&#169;&nbsp;2004-2015&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+    </div>
+    <div class="copyright4">
+        京东旗下网站：<a href="#">360TOP</a>&nbsp;&nbsp;<a href="#">拍拍网</a>&nbsp;&nbsp;<a href="#">网银在线</a>
+    </div>
+
 </div>
 </body>
 </html>
